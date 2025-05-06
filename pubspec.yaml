@@ -1,0 +1,43 @@
+name: pregnancy_tracker
+description: "Un nouveau projet Flutter."
+
+publish_to: 'none'  # Supprimer cette ligne si vous souhaitez publier sur pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0-323.2.beta
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.1.0       # Pour les appels API
+  provider: ^6.0.5   # Gestion de l'état
+  intl: any          # Pour la gestion des dates et de la localisation
+  shared_preferences: ^2.2.2 # Pour enregistrer les préférences utilisateur (langue, etc.)
+  flutter_local_notifications: ^14.0.0  # Pour les notifications locales
+  sqflite: ^2.2.0    # Pour la base de données locale
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  connectivity_plus: ^3.0.3
+
+  flutter_lints: ^5.0.0  # Paquet pour les bonnes pratiques de codage
+  fl_chart: ^0.71.0
+
+
+flutter:
+  uses-material-design: true  # Assurez-vous que les icônes Material sont incluses
+
+  # Pour ajouter des ressources (images, etc.), ajoutez une section assets ici.
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+
+  # Pour ajouter des polices personnalisées à votre application, ajoutez une section "fonts" ici.
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
